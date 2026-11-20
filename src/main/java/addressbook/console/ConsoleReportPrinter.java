@@ -39,7 +39,7 @@ public class ConsoleReportPrinter {
         }
         duplicates.forEach((record, count) -> output.println(
                 "  " + record.city() + ", " + record.street() + ", д. " + record.house()
-                        + ", этажей: " + record.floor() + " — повторений: " + count));
+                        + ", этажей: " + record.floor() + ", повторений: " + count));
     }
 
     private void printFloorCounts(Map<String, Map<Integer, Integer>> floorCountsByCity) {
